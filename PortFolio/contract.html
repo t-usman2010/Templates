@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form - Taha Usman</title>
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+  <div class="container">
+    <form  action="https://api.web3forms.com/submit" method="POST"  class="form-container">
+      <input type="hidden" name="apikey" value="789c1ef7-b7e6-4e67-b90b-884d570235ef">
+
+      <h2 class="form-title">Contact Me</h2>
+      
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" class="form-control" name="Name" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" class="form-control" name="Email" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" class="form-control" name="Message" required></textarea>
+      </div>
+      
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </div>
+  <script>
+     // Add random floating particles in the background
+  const body = document.querySelector('body');
+    for(let i = 0; i < 50; i++) {
+        const particle = document.createElement('div');
+        particle.style.position = 'fixed';
+        particle.style.width = '4px';
+        particle.style.height = '4px';
+        particle.style.background = 'rgba(255,255,255,0.5)';
+        particle.style.left = Math.random() * 100 + 'vw';
+        particle.style.top = Math.random() * 100 + 'vh';
+        particle.style.animation = `float ${Math.random() * 3 + 2}s infinite`;
+        body.appendChild(particle);
+      }
+  </script>
+</body>
+</html>
